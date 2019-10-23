@@ -1,5 +1,21 @@
 # Vernon Christensen
 myWord = "Joe sister"
+misses = 0
+
+
+hanglist = [''' pic 1''', ''' pic 2''']
+
+while misses < 7:
+	print(hanglist[misses])
+	guess = input("Guess a letter: ")
+	if guess in myWord:
+		# loop threw secret and find all the matching letters
+		print("That letter is in the secret word ")
+	else:
+		misses = misses + 1
+
+
+
 wronglist = []
 rightlist = []
 choice = input("type a word: ")
@@ -18,8 +34,9 @@ print(secret)
 # How to replace an _ with a letter
 
 secret[2] = "i"
-print(secret)
+print(myWord)
 
+# How to keep track of misses
 
 
 
